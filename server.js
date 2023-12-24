@@ -19,7 +19,6 @@ mongoose.connect(DB).then(() => {
 });
 
 const app = require('./app');
-
 // console.log(process.env);
 
 const port = 3000;

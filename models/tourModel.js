@@ -152,19 +152,17 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  // console.log(docs);
-  console.log(`${Date.now() - this.start} miliseconds`);
-  next();
-});
+// tourSchema.post(/^find/, function (docs, next) {
+// console.log(docs);
+//   console.log(`${Date.now() - this.start} miliseconds`);
+//   next();
+// });
 
 // 4) Aggregation Middleware
 tourSchema.pre('aggregate', function (next) {
-  console.log(JSON.stringify(this.pipeline()));
   this.pipeline().unshift({
     $match: { secretTour: { $ne: true } },
   });
-  console.log(JSON.stringify(this.pipeline()));
   next();
 });
 

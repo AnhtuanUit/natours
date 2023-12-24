@@ -42,8 +42,6 @@ if (userDataForm) {
     form.append('email', email);
     form.append('photo', document.getElementById('photo').files[0]);
 
-    console.log(form);
-
     await updateSetting(form, 'data');
 
     document.querySelector('.btn--save-setting').textContent = 'Save settings';
@@ -79,6 +77,5 @@ if (btnBookTour) {
     e.target.textContent = 'Processing ...';
     const { tourId } = e.target.dataset;
     const result = await bookTour(tourId);
-    console.log(result);
   });
 }

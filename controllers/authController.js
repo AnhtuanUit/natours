@@ -90,7 +90,6 @@ exports.logout = catchAsync(async (req, res, next) => {
 });
 
 exports.protect = catchAsync(async (req, res, next) => {
-  console.log('xxxxxx');
   // 1) Get JWT token from header and check if JWT token exist
   // console.log(req.headers);
   let token;
@@ -211,7 +210,6 @@ exports.forgotPassword = async (req, res, next) => {
       message: 'Token sent to email',
     });
   } catch (err) {
-    console.log(err);
     user.passwordResetToken = undefined;
     user.passwordResetExpires = undefined;
     user.save({ validateBeforeSave: false });
