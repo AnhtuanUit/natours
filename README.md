@@ -8,9 +8,16 @@ Welcome to the Natours web application! This project is based on the skills you'
 
 Explore the source code and contribute to the project on GitHub: [Natours GitHub](https://github.com/AnhtuanUit/natours)
 
-### Demo
+### Video Demo and Live Application
 
-Check out the live demo of the Natours web application [Natours Demo](https://natours-8ogu.onrender.com/)
+[![Watch the Demo Video](https://img.youtube.com/vi/jo0hrj23-i8/0.jpg)](https://youtu.be/jo0hrj23-i8)
+
+Click on the image above or use this [link](https://www.youtube.com/watch?v=jo0hrj23-i8) to watch the demo video.
+
+Explore the live demo of the Natours web application: [Natours Demo](https://natours-8ogu.onrender.com/)
+
+**Note:** The live demo is hosted on a free hosting service, and it may take about 1 or 2 minutes for the server to wake up if it's in a sleeping state.
+
 
 ### What You've Learned
 
