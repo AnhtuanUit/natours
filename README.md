@@ -18,6 +18,9 @@ Explore the live demo of the Natours web application: [Natours Demo](https://nat
 
 **Note:** The live demo is hosted on a free hosting service, and it may take about 1 or 2 minutes for the server to wake up if it's in a sleeping state.
 
+### Postman Documentation
+
+You can find the API documentation using Postman [here](https://documenter.getpostman.com/view/256237/2s9YsFCt2w).
 
 ### What You've Learned
 
