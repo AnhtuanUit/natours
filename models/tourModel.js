@@ -161,9 +161,16 @@ tourSchema.pre(/^find/, function (next) {
 
 // 4) Aggregation Middleware
 tourSchema.pre('aggregate', function (next) {
-  this.pipeline().unshift({
+  const neSecretTourMatch = {
     $match: { secretTour: { $ne: true } },
-  });
+  };
+
+  // Ensure that $geoNear is the first stage for optimal performance
+  if (this.pipeline()[0].$geoNear) {
+    this.pipeline().splice(1, 0, neSecretTourMatch);
+  } else {
+    this.pipeline().unshift(neSecretTourMatch);
+  }
   next();
 });
 

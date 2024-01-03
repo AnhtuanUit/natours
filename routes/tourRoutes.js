@@ -22,6 +22,8 @@ router.get(
 // router.param('id', tourController.checkID);
 router.use('/:tourId/reviews', reviewRouter);
 
+router.route('/distances/:latlng/unit/:unit').get(tourController.getDistances);
+
 router
   .route('/tours-within/:distance/center/:latlng/unit/:unit')
   .get(tourController.getTourWithin);
