@@ -10,7 +10,7 @@ Explore the source code and contribute to the project on GitHub: [Natours GitHub
 
 ### Video Demo and Live Application
 
-[![Watch the Demo Video](https://img.youtube.com/vi/jo0hrj23-i8/0.jpg)](https://youtu.be/jo0hrj23-i8)
+[![Watch the Demo Video](https://github.com/AnhtuanUit/natours/assets/13465843/ce404ebd-7c26-4063-8350-84c9316a5c89)](https://youtu.be/jo0hrj23-i8)
 
 Click on the image above or use this [link](https://www.youtube.com/watch?v=jo0hrj23-i8) to watch the demo video.
 
